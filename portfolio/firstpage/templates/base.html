@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.png' %}">
+    <meta charset="UTF-8">
+    <title>{%block title%}{% endblock %} | Pranjal</title>
+
+<!--    CSS links   -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/background.css' %}">
+
+<!--    JavaScript Links-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{% static 'js/background.js' %}"></script>
+    <script src="{% static 'js/footer.js' %}"></script>
+</head>
+<body>
+<canvas id="canvas" width="100%" height="100%"></canvas>
+{% include 'navbar.html'%}
+
+{% block content %}
+{% endblock %}
+
+{% include 'footer.html'%}
+</body>
+</html>
