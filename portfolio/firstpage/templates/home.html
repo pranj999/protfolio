@@ -16,14 +16,25 @@ Hello
   <p class="text-2xl ">This is Pranjal Patel from India! I'm a computer science major with interests in data science and machine learning.</p>
   <p class="text-2xl">I love programming and taking up new challenges in life. Recently, I have gotten more into hiking and exploring nature. I love reading fiction, non-fiction and mangas. Gaming is a must to cool down.</p>
 </div>
+
 <div class="mt-6 px-6 py-12">
   <h1 class="text-5xl text-center text-white">Portfolio</h1>
 </div>
+
 <div class="mt-6 px-6 py-12 bg-gray-100">
-  <h1 class="text-5xl text-red-500 underline underline-offset-4">Journey till now</h1>
+  <h1 class="text-5xl text-red-500 underline underline-offset-4">Journey till now</h1><br/>
+  <div class="flex justify-evenly">
+  <img src="{% static 'profile.jpg' %}" alt="bodyImg" class="w-40 h-40 flex justify-start "/>
+  <p class="text-right">Hello there. This is my Journy Paragraph.</p>
+  </div>
 </div>
+
+<div class="m-20 px-10 py-20  flex justify-center items-center">
+  <button class="text-xl text-white w-40 h-40 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-500 via-purple-500 to-pink-500">Resume</button>
+</div>
+
 <button onclick="moveToTop()" id="move-to-top" title="Go to top"
     class="fixed bottom-4 right-4 bg-gray-700 text-white p-3 rounded-full hidden">
     Move to Top
-  </button>
+</button>
 {% endblock %}
